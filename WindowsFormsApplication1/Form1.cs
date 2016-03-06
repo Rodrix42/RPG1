@@ -45,6 +45,22 @@ namespace WindowsFormsApplication1
             label3.Text = sh2.Mp.ToString();
             label2.Text = r2.Hp.ToString();
             label1.Text = r2.Mp.ToString();
+            progressBar1.Maximum = p2.Hp;
+            progressBar2.Maximum = pr2.Hp;
+            progressBar3.Maximum = sh2.Hp;
+            progressBar4.Maximum = r2.Hp;
+            progressBar5.Maximum = p1.Hp;
+            progressBar6.Maximum = pr1.Hp;
+            progressBar7.Maximum = sh1.Hp;
+            progressBar8.Maximum = r1.Hp;
+            progressBar9.Maximum = p2.Mp;
+            progressBar9.Maximum = pr2.Mp;
+            progressBar9.Maximum = sh2.Mp;
+            progressBar9.Maximum = r2.Mp;
+            progressBar9.Maximum = p1.Mp;
+            progressBar9.Maximum = pr1.Mp;
+            progressBar9.Maximum = sh1.Mp;
+            progressBar9.Maximum = r1.Mp;
         }
     }
 }
