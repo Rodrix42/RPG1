@@ -62,5 +62,10 @@ namespace WindowsFormsApplication1
             progressBar9.Maximum = sh1.Mp;
             progressBar9.Maximum = r1.Mp;
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
