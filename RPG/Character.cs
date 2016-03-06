@@ -7,9 +7,27 @@ namespace ConsoleApplication1
 {
     public class Character
     {
-        public int hp;
-        public int mp;
-        public int dmg;
+        private int hp;
+
+        public int Hp
+        {
+            get { return hp; }
+            set { hp = value; }
+        }
+        private int mp;
+
+        public int Mp
+        {
+            get { return mp; }
+            set { mp = value; }
+        }
+        private int dmg;
+
+        public int Dmg
+        {
+            get { return dmg; }
+            set { dmg = value; }
+        }
         public Character target;
         public void attack()
         {

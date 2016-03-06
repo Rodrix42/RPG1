@@ -33,7 +33,7 @@ namespace ConsoleApplication1
             string start = Console.ReadLine();
             if (start == "start")
             {
-                while (p2.hp + r2.hp + sh2.hp + pr2.hp > 0)
+                while (p2.Hp + r2.Hp + sh2.Hp + pr2.Hp > 0)
                 {
                     Log.Update(AllCharacters);
                     Console.WriteLine("Кто будет бить?");
@@ -58,25 +58,25 @@ namespace ConsoleApplication1
                                 case "1":
                                     p1.target = p2;
                                     p1.attack();
-                                    Console.WriteLine("У палладина осталось {0} ХП", p2.hp);
+                                    Console.WriteLine("У палладина осталось {0} ХП", p2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "2":
                                     p1.target = pr2;
                                     p1.attack();
-                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.hp);
+                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "3":
                                     p1.target = sh2;
                                     p1.attack();
-                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.hp);
+                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "4":
                                     p1.target = r2;
                                     p1.attack();
-                                    Console.WriteLine("У вора осталось {0} ХП", r2.hp);
+                                    Console.WriteLine("У вора осталось {0} ХП", r2.Hp);
                                     Console.ReadLine();
                                     break;
                             }
@@ -95,25 +95,25 @@ namespace ConsoleApplication1
                                 case "1":
                                     pr1.target = p2;
                                     pr1.attack();
-                                    Console.WriteLine("У палладина осталось {0} ХП", p2.hp);
+                                    Console.WriteLine("У палладина осталось {0} ХП", p2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "2":
                                     pr1.target = pr2;
                                     pr1.attack();
-                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.hp);
+                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "3":
                                     pr1.target = sh2;
                                     pr1.attack();
-                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.hp);
+                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "4":
                                     pr1.target = r2;
                                     pr1.attack();
-                                    Console.WriteLine("У вора осталось {0} ХП", r2.hp);
+                                    Console.WriteLine("У вора осталось {0} ХП", r2.Hp);
                                     Console.ReadLine();
                                     break;
                             }
@@ -132,25 +132,25 @@ namespace ConsoleApplication1
                                 case "1":
                                     sh1.target = p2;
                                     sh1.attack();
-                                    Console.WriteLine("У палладина осталось {0} ХП", p2.hp);
+                                    Console.WriteLine("У палладина осталось {0} ХП", p2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "2":
                                     sh1.target = pr2;
                                     sh1.attack();
-                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.hp);
+                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "3":
                                     sh1.target = sh2;
                                     sh1.attack();
-                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.hp);
+                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "4":
                                     sh1.target = r2;
                                     sh1.attack();
-                                    Console.WriteLine("У вора осталось {0} ХП", r2.hp);
+                                    Console.WriteLine("У вора осталось {0} ХП", r2.Hp);
                                     Console.ReadLine();
                                     break;
                             }
@@ -169,25 +169,25 @@ namespace ConsoleApplication1
                                 case "1":
                                     r1.target = p2;
                                     r1.attack();
-                                    Console.WriteLine("У палладина осталось {0} ХП", p2.hp);
+                                    Console.WriteLine("У палладина осталось {0} ХП", p2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "2":
                                     r1.target = pr2;
                                     r1.attack();
-                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.hp);
+                                    Console.WriteLine("У жреца осталось {0} ХП", pr2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "3":
                                     r1.target = sh2;
                                     r1.attack();
-                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.hp);
+                                    Console.WriteLine("У шамана осталось {0} ХП", sh2.Hp);
                                     Console.ReadLine();
                                     break;
                                 case "4":
                                     r1.target = r2;
                                     r1.attack();
-                                    Console.WriteLine("У вора осталось {0} ХП", r2.hp);
+                                    Console.WriteLine("У вора осталось {0} ХП", r2.Hp);
                                     Console.ReadLine();
                                     break;
                             }
