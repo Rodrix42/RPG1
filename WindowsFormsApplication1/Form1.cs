@@ -18,17 +18,125 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             
         }
-        
+        void StageOne ()
+        {
+            panel1.Visible = false;
+            panel2.Visible = false;
+            button17.Visible = true;
+            label19.Text = "Нажмите кнопку начать";
+            
+        }
+        void StageTwo()
+        {
+
+            panel2.Visible = false;
+            panel1.Visible = true;
+            label19.Text = "Выберите атакующего.";
+        }
+        void StageThree()
+        {
+            if (agressor == p1)
+            {
+                button16.Visible = false;
+                button15.Visible = false;
+                button14.Visible = false;
+                button13.Visible = false;
+                button16.Enabled = false;
+                button15.Enabled = false;
+                button14.Enabled = false;
+                button13.Enabled = false;
+                panel1.Visible = false;
+                panel2.Visible = true;
+                label19.Text = "Выбери цель";
+            }
+            if (agressor == pr1)
+            {
+                button16.Visible = false;
+                button15.Visible = false;
+                button14.Visible = false;
+                button13.Visible = false;
+                button16.Enabled = false;
+                button15.Enabled = false;
+                button14.Enabled = false;
+                button13.Enabled = false;
+                panel1.Visible = false;
+                panel2.Visible = true;
+                label19.Text = "Выбери цель";
+            }
+            if (agressor == sh1)
+            {
+                button16.Visible = false;
+                button15.Visible = false;
+                button14.Visible = false;
+                button13.Visible = false;
+                button16.Enabled = false;
+                button15.Enabled = false;
+                button14.Enabled = false;
+                button13.Enabled = false;
+                panel1.Visible = false;
+                panel2.Visible = true;
+                label19.Text = "Выбери цель";
+            }
+            if (agressor == r1)
+            {
+                button16.Visible = false;
+                button15.Visible = false;
+                button14.Visible = false;
+                button13.Visible = false;
+                button16.Enabled = false;
+                button15.Enabled = false;
+                button14.Enabled = false;
+                button13.Enabled = false;
+                panel1.Visible = false;
+                panel2.Visible = true;
+                label19.Text = "Выбери цель";
+            }
+
+        }
+        void StageFour()
+        {
+           
+            panel1.Visible = false;
+            panel2.Visible = true;
+            
+
+        }
+        void StageFive()
+        {
+
+        }
+        int stage = 1;
+        Character agressor;
+        Character p1 = new Palladin(800, 400, 80);
+        Character p2 = new Palladin(800, 400, 80);
+        Character r1 = new Rogue(360, 280, 100);
+        Character r2 = new Rogue(360, 280, 100);
+        Character sh1 = new Shaman(500, 700, 50);
+        Character sh2 = new Shaman(500, 700, 50);
+        Character pr1 = new Priest(400, 900, 30);
+        Character pr2 = new Priest(400, 900, 30);
         private void Form1_Load(object sender, EventArgs e)
         {
-            Character p1 = new Palladin(800, 400, 80);
-            Character p2 = new Palladin(800, 400, 80);
-            Character r1 = new Rogue(360, 280, 100);
-            Character r2 = new Rogue(360, 280, 100);
-            Character sh1 = new Shaman(500, 700, 50);
-            Character sh2 = new Shaman(500, 700, 50);
-            Character pr1 = new Priest(400, 900, 30);
-            Character pr2 = new Priest(400, 900, 30);
+            if (stage == 1)
+            {
+            StageOne();
+            }
+            if (stage == 2)
+            {
+                StageTwo();
+            }
+            if (stage == 3)
+            {
+                StageOne();
+            }
+            if (stage == 4)
+            {
+                StageOne();
+            }
+            if (stage == 5)
+            {
+                StageOne();
+            }
             label16.Text = p1.Hp.ToString();
             label15.Text = p1.Mp.ToString();
             label14.Text = pr1.Hp.ToString();
@@ -54,18 +162,143 @@ namespace WindowsFormsApplication1
             progressBar7.Maximum = sh1.Hp;
             progressBar8.Maximum = r1.Hp;
             progressBar9.Maximum = p2.Mp;
-            progressBar9.Maximum = pr2.Mp;
-            progressBar9.Maximum = sh2.Mp;
-            progressBar9.Maximum = r2.Mp;
-            progressBar9.Maximum = p1.Mp;
-            progressBar9.Maximum = pr1.Mp;
-            progressBar9.Maximum = sh1.Mp;
-            progressBar9.Maximum = r1.Mp;
+            progressBar10.Maximum = pr2.Mp;
+            progressBar11.Maximum = sh2.Mp;
+            progressBar12.Maximum = r2.Mp;
+            progressBar13.Maximum = p1.Mp;
+            progressBar14.Maximum = pr1.Mp;
+            progressBar15.Maximum = sh1.Mp;
+            progressBar16.Maximum = r1.Mp;
+
         }
 
-        private void label18_Click(object sender, EventArgs e)
+        private void button17_Click(object sender, EventArgs e)
         {
-
+            button17.Visible = false;
+            button17.Enabled = false;
+            StageTwo();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            agressor = p1;
+            stage = 3;
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            agressor = pr1;
+            stage = 3;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            agressor = sh1;
+            stage = 3;
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            agressor = r1;
+            stage = 3;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (agressor == p1)
+            {
+                p1.target = p2;    
+            }
+            StageFour();
+            if (agressor == pr1)
+            {
+                pr1.target = p2;
+            }
+            StageFour();
+            if (agressor == sh1)
+            {
+                sh1.target = p2;
+            }
+            StageFour();
+            if (agressor == r1)
+            {
+                r1.target = p2;
+            }
+            StageFour();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (agressor == p1)
+            {
+                p1.target = pr2;
+            }
+            StageFour();
+            if (agressor == pr1)
+            {
+                pr1.target = pr2;
+            }
+            StageFour();
+            if (agressor == sh1)
+            {
+                sh1.target = pr2;
+            }
+            StageFour();
+            if (agressor == r1)
+            {
+                r1.target = pr2;
+            }
+            StageFour();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (agressor == p1)
+            {
+                p1.target = sh2;
+            }
+            StageFour();
+            if (agressor == pr1)
+            {
+                pr1.target = sh2;
+            }
+            StageFour();
+            if (agressor == sh1)
+            {
+                sh1.target = sh2;
+            }
+            StageFour();
+            if (agressor == r1)
+            {
+                r1.target = sh2;
+            }
+            StageFour();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (agressor == p1)
+            {
+                p1.target = r2;
+            }
+            StageFour();
+            if (agressor == pr1)
+            {
+                pr1.target = r2;
+            }
+            StageFour();
+            if (agressor == sh1)
+            {
+                sh1.target = r2;
+            }
+            StageFour();
+            if (agressor == r1)
+            {
+                r1.target = r2;
+            }
+            StageFour();
+        }
+
+
     }
 }

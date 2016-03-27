@@ -151,6 +151,7 @@ namespace ConsoleApplication1
                                     sh1.target = r2;
                                     sh1.attack();
                                     Console.WriteLine("У вора осталось {0} ХП", r2.Hp);
+
                                     Console.ReadLine();
                                     break;
                             }

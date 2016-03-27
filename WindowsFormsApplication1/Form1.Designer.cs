@@ -71,15 +71,17 @@
             this.progressBar15 = new System.Windows.Forms.ProgressBar();
             this.progressBar16 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -92,6 +94,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Палладин";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -101,6 +104,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Жрец";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -110,6 +114,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Шаман";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -119,6 +124,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Вор";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -317,7 +323,6 @@
             this.label18.Size = new System.Drawing.Size(72, 13);
             this.label18.TabIndex = 25;
             this.label18.Text = "Команда №2";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // progressBar1
             // 
@@ -495,6 +500,46 @@
             this.panel1.Size = new System.Drawing.Size(295, 319);
             this.panel1.TabIndex = 42;
             // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(30, 295);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(47, 22);
+            this.button12.TabIndex = 47;
+            this.button12.Text = "Атака";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(30, 211);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(47, 22);
+            this.button11.TabIndex = 46;
+            this.button11.Text = "Атака";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(30, 139);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(47, 22);
+            this.button10.TabIndex = 45;
+            this.button10.Text = "Атака";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(30, 61);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(47, 22);
+            this.button9.TabIndex = 44;
+            this.button9.Text = "Атака";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button4);
@@ -527,60 +572,6 @@
             this.panel2.Size = new System.Drawing.Size(295, 319);
             this.panel2.TabIndex = 43;
             // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(30, 61);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(47, 22);
-            this.button9.TabIndex = 44;
-            this.button9.Text = "Атака";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(30, 139);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(47, 22);
-            this.button10.TabIndex = 45;
-            this.button10.Text = "Атака";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(30, 211);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(47, 22);
-            this.button11.TabIndex = 46;
-            this.button11.Text = "Атака";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(30, 295);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(47, 22);
-            this.button12.TabIndex = 47;
-            this.button12.Text = "Атака";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(219, 295);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(47, 22);
-            this.button13.TabIndex = 51;
-            this.button13.Text = "Атака";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(219, 211);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(47, 22);
-            this.button14.TabIndex = 50;
-            this.button14.Text = "Атака";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
             // button15
             // 
             this.button15.Location = new System.Drawing.Point(219, 139);
@@ -599,11 +590,50 @@
             this.button16.Text = "Атака";
             this.button16.UseVisualStyleBackColor = true;
             // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(219, 211);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(47, 22);
+            this.button14.TabIndex = 50;
+            this.button14.Text = "Атака";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(219, 295);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(47, 22);
+            this.button13.TabIndex = 51;
+            this.button13.Text = "Атака";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Location = new System.Drawing.Point(313, 152);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(113, 69);
+            this.button17.TabIndex = 44;
+            this.button17.Text = "Начать";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(310, 7);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 13);
+            this.label19.TabIndex = 45;
+            this.label19.Text = "label19";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 338);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.button17);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Form1";
@@ -614,6 +644,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -671,6 +702,8 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label19;
     }
 }
 
