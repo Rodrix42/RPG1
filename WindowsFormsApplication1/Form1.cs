@@ -117,26 +117,9 @@ namespace WindowsFormsApplication1
         Character pr2 = new Priest(400, 900, 30);
         private void Form1_Load(object sender, EventArgs e)
         {
-            if (stage == 1)
-            {
+            
             StageOne();
-            }
-            if (stage == 2)
-            {
-                StageTwo();
-            }
-            if (stage == 3)
-            {
-                StageOne();
-            }
-            if (stage == 4)
-            {
-                StageOne();
-            }
-            if (stage == 5)
-            {
-                StageOne();
-            }
+            stage = 2;
             label16.Text = p1.Hp.ToString();
             label15.Text = p1.Mp.ToString();
             label14.Text = pr1.Hp.ToString();
@@ -181,8 +164,12 @@ namespace WindowsFormsApplication1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            agressor = p1;
-            stage = 3;
+            if (stage == 2)
+            {
+                agressor = p1;
+                stage = 3;
+                StageThree();
+            }
         }
 
         private void button10_Click(object sender, EventArgs e)
