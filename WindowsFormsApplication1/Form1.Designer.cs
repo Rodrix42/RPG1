@@ -71,15 +71,7 @@
             this.progressBar15 = new System.Windows.Forms.ProgressBar();
             this.progressBar16 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -134,6 +126,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Палладин";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -143,6 +136,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Жрец";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -152,6 +146,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Шаман";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -161,6 +156,7 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Вор";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label1
             // 
@@ -326,7 +322,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.BackColor = System.Drawing.Color.Red;
+            this.progressBar1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar1.ForeColor = System.Drawing.Color.Red;
             this.progressBar1.Location = new System.Drawing.Point(18, 24);
             this.progressBar1.Name = "progressBar1";
@@ -335,7 +331,7 @@
             // 
             // progressBar2
             // 
-            this.progressBar2.BackColor = System.Drawing.Color.Red;
+            this.progressBar2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar2.ForeColor = System.Drawing.Color.Red;
             this.progressBar2.Location = new System.Drawing.Point(18, 103);
             this.progressBar2.Name = "progressBar2";
@@ -344,7 +340,7 @@
             // 
             // progressBar3
             // 
-            this.progressBar3.BackColor = System.Drawing.Color.Red;
+            this.progressBar3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar3.ForeColor = System.Drawing.Color.Red;
             this.progressBar3.Location = new System.Drawing.Point(18, 175);
             this.progressBar3.Name = "progressBar3";
@@ -353,7 +349,7 @@
             // 
             // progressBar4
             // 
-            this.progressBar4.BackColor = System.Drawing.Color.Red;
+            this.progressBar4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar4.ForeColor = System.Drawing.Color.Red;
             this.progressBar4.Location = new System.Drawing.Point(18, 256);
             this.progressBar4.Name = "progressBar4";
@@ -362,7 +358,7 @@
             // 
             // progressBar5
             // 
-            this.progressBar5.BackColor = System.Drawing.Color.Red;
+            this.progressBar5.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar5.ForeColor = System.Drawing.Color.Red;
             this.progressBar5.Location = new System.Drawing.Point(177, 24);
             this.progressBar5.Name = "progressBar5";
@@ -371,7 +367,7 @@
             // 
             // progressBar6
             // 
-            this.progressBar6.BackColor = System.Drawing.Color.Red;
+            this.progressBar6.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar6.ForeColor = System.Drawing.Color.Red;
             this.progressBar6.Location = new System.Drawing.Point(177, 103);
             this.progressBar6.Name = "progressBar6";
@@ -380,7 +376,7 @@
             // 
             // progressBar7
             // 
-            this.progressBar7.BackColor = System.Drawing.Color.Red;
+            this.progressBar7.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar7.ForeColor = System.Drawing.Color.Red;
             this.progressBar7.Location = new System.Drawing.Point(177, 175);
             this.progressBar7.Name = "progressBar7";
@@ -389,7 +385,7 @@
             // 
             // progressBar8
             // 
-            this.progressBar8.BackColor = System.Drawing.Color.Red;
+            this.progressBar8.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar8.ForeColor = System.Drawing.Color.Red;
             this.progressBar8.Location = new System.Drawing.Point(177, 256);
             this.progressBar8.Name = "progressBar8";
@@ -471,17 +467,13 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.progressBar16);
-            this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.progressBar15);
             this.panel1.Controls.Add(this.progressBar14);
-            this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.progressBar5);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.progressBar13);
-            this.panel1.Controls.Add(this.button10);
             this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.button6);
@@ -500,56 +492,12 @@
             this.panel1.Size = new System.Drawing.Size(295, 319);
             this.panel1.TabIndex = 42;
             // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(30, 295);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(47, 22);
-            this.button12.TabIndex = 47;
-            this.button12.Text = "Атака";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(30, 211);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(47, 22);
-            this.button11.TabIndex = 46;
-            this.button11.Text = "Атака";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(30, 139);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(47, 22);
-            this.button10.TabIndex = 45;
-            this.button10.Text = "Атака";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(30, 61);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(47, 22);
-            this.button9.TabIndex = 44;
-            this.button9.Text = "Атака";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button15);
-            this.panel2.Controls.Add(this.button16);
             this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.button14);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button13);
             this.panel2.Controls.Add(this.progressBar12);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label8);
@@ -571,42 +519,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(295, 319);
             this.panel2.TabIndex = 43;
-            // 
-            // button15
-            // 
-            this.button15.Location = new System.Drawing.Point(219, 139);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(47, 22);
-            this.button15.TabIndex = 49;
-            this.button15.Text = "Атака";
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Location = new System.Drawing.Point(219, 61);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(47, 22);
-            this.button16.TabIndex = 48;
-            this.button16.Text = "Атака";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(219, 211);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(47, 22);
-            this.button14.TabIndex = 50;
-            this.button14.Text = "Атака";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(219, 295);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(47, 22);
-            this.button13.TabIndex = 51;
-            this.button13.Text = "Атака";
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
@@ -694,14 +606,6 @@
         private System.Windows.Forms.ProgressBar progressBar16;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Label label19;
     }

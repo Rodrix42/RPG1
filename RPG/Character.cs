@@ -53,7 +53,7 @@ namespace ConsoleApplication1
         public Character target;
         public void attack()
         {
-            target.hp -= dmg; 
+            target.Hp -= dmg; 
         }
     }
 }
