@@ -18,6 +18,19 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             
         }
+        public void winlose()
+        {
+            if (p1.Hp + pr1.Hp + sh1.Hp + r1.Hp == 0)
+            {
+                panel1.Visible = false;
+                label19.Text = "Вторая команда победила!";
+            }
+            if (p2.Hp + pr2.Hp + sh2.Hp + r2.Hp == 0)
+            {
+                panel2.Visible = false;
+                label19.Text = "Первая команда победила!";
+            }
+        }
         public void update()
         {
             label16.Text = p1.Hp.ToString();
@@ -108,16 +121,7 @@ namespace WindowsFormsApplication1
                 button8.Visible = false;
                 button8.Enabled = false;
             }
-            if(p1.Hp + pr1.Hp + sh1.Hp + r1.Hp == 0)
-            {
-                panel1.Visible = false;
-                label19.Text = "Вторая команда победила!";
-            }
-            if (p2.Hp + pr2.Hp + sh2.Hp + r2.Hp == 0)
-            {
-                panel2.Visible = false;
-                label19.Text = "Первая команда победила!";
-            }
+           
 
         }
         void StageOne ()
@@ -154,6 +158,7 @@ namespace WindowsFormsApplication1
             panel1.Visible = true;
             label19.Text = "Выберите цель.";
         }
+        int skill = 0;
         int stage = 1;
         Character agressor;
         Character p1 = new Palladin(800, 400, 80);
@@ -184,6 +189,14 @@ namespace WindowsFormsApplication1
             label3.Text = sh2.Mp.ToString();
             label2.Text = r2.Hp.ToString();
             label1.Text = r2.Mp.ToString();
+            label20.Text = p1.Dmg.ToString();
+            label21.Text = pr1.Dmg.ToString();
+            label22.Text = sh1.Dmg.ToString();
+            label23.Text = r1.Dmg.ToString();
+            label24.Text = p2.Dmg.ToString();
+            label25.Text = pr2.Dmg.ToString();
+            label26.Text = sh2.Dmg.ToString();
+            label27.Text = r2.Dmg.ToString();
             progressBar1.Maximum = p2.Hp;
             progressBar2.Maximum = pr2.Hp;
             progressBar3.Maximum = sh2.Hp;
@@ -217,7 +230,9 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = p1;
+                winlose();
                 stage = 3;
+                
                 StageThree();
             }
             else if (stage == 5)
@@ -225,6 +240,7 @@ namespace WindowsFormsApplication1
                 agressor.target = p1;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 2;
                 StageTwo();
             }
@@ -235,7 +251,9 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = pr1;
+                winlose();
                 stage = 3;
+                
                 StageThree();
             }
             else if (stage == 5)
@@ -243,6 +261,7 @@ namespace WindowsFormsApplication1
                 agressor.target = pr1;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 2;
                 StageTwo();
             }
@@ -253,6 +272,7 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = sh1;
+                winlose();
                 stage = 3;
                 StageThree();
             }
@@ -261,6 +281,7 @@ namespace WindowsFormsApplication1
                 agressor.target = sh1;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 2;
                 StageTwo();
             }
@@ -271,6 +292,7 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = r1;
+                winlose();
                 stage = 3;
                 StageThree();
             }
@@ -279,6 +301,7 @@ namespace WindowsFormsApplication1
                 agressor.target = r1;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 2;
                 StageTwo();
             }
@@ -289,14 +312,24 @@ namespace WindowsFormsApplication1
             if (stage == 3)
             {
                 agressor.target = p2;
-                agressor.attack();
+                if (skill == 0)
+                {
+                    agressor.attack();
+                }
+                else if (skill == 1)
+                {
+                    p1.Skill1();
+                }
+                
                 update();
+                winlose();
                 stage = 4;
                 StageFour();
             }
             else if(stage == 4)
             {
                 agressor = p2;
+                winlose();
                 stage = 5;
                 StageFive();
             }
@@ -309,12 +342,14 @@ namespace WindowsFormsApplication1
                 agressor.target = pr2;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 4;
                 StageFour();
             }
             else if (stage == 4)
             {
                 agressor = pr2;
+                winlose();
                 stage = 5;
                 StageFive();
             }
@@ -327,6 +362,7 @@ namespace WindowsFormsApplication1
                 agressor.target =sh2;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 4;
                 StageFour();
             }
@@ -345,14 +381,29 @@ namespace WindowsFormsApplication1
                 agressor.target = r2;
                 agressor.attack();
                 update();
+                winlose();
                 stage = 4;
                 StageFour();
             }
             else if (stage == 4)
             {
                 agressor = r2;
+                winlose();
                 stage = 5;
                 StageFive();
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (stage == 2)
+            {
+                skill = 1;
+                agressor = p1;
+                winlose();
+                stage = 3;
+
+                StageThree();
             }
         }
     }

@@ -13,5 +13,17 @@ namespace ConsoleApplication1
             this.Mp = mp;
             this.Dmg = dmg;
         }
+        public override void Skill1()
+        {
+            if (this.Mp < 60)
+            {
+
+            }
+            else
+            {
+                target.Dmg = (int)(target.Dmg - target.Dmg * 0.1);
+                this.Mp = this.Mp - 60;
+            }
+        }
     }
 }

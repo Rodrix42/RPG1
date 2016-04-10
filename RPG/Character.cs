@@ -55,5 +55,9 @@ namespace ConsoleApplication1
         {
             target.Hp -= dmg; 
         }
+        public virtual void Skill1()
+        {
+ 
+        }
     }
 }
