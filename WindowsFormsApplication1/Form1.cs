@@ -158,6 +158,7 @@ namespace WindowsFormsApplication1
             panel1.Visible = true;
             label19.Text = "Выберите цель.";
         }
+        int typeOfAttack = 0;
         int skill = 0;
         int stage = 1;
         Character agressor;
@@ -238,11 +239,32 @@ namespace WindowsFormsApplication1
             else if (stage == 5)
             {
                 agressor.target = p1;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 2;
-                StageTwo();
+                if(typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if(typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if(typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                
+                
             }
         }
 
@@ -258,7 +280,27 @@ namespace WindowsFormsApplication1
             }
             else if (stage == 5)
             {
-                agressor.target = pr1;
+                
+                if (typeOfAttack == 0)
+                {
+                    agressor.target = pr1;
+                    agressor.attack();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.target = pr1;
+                    agressor.Skill1();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    stage = 4;
+                    StageFour();
+                }
                 agressor.attack();
                 update();
                 winlose();
@@ -312,23 +354,36 @@ namespace WindowsFormsApplication1
             if (stage == 3)
             {
                 agressor.target = p2;
-                if (skill == 0)
+                
+                if (typeOfAttack == 0)
                 {
                     agressor.attack();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
                 }
-                else if (skill == 1)
+                if (typeOfAttack == 11)
                 {
-                    p1.Skill1();
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
                 }
-                
-                update();
-                winlose();
-                stage = 4;
-                StageFour();
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
             }
             else if(stage == 4)
             {
                 agressor = p2;
+                typeOfAttack = 0;
                 winlose();
                 stage = 5;
                 StageFive();
@@ -396,15 +451,26 @@ namespace WindowsFormsApplication1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            if (stage == 2)
-            {
-                skill = 1;
-                agressor = p1;
-                winlose();
-                stage = 3;
+            agressor = p1;
+            typeOfAttack = 11;
+            stage = 3;
+            StageThree();
+        }
 
-                StageThree();
-            }
+        private void button13_Click(object sender, EventArgs e)
+        {
+            agressor = p2;
+            typeOfAttack = 11;
+            stage = 5;
+            StageFive();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            agressor = pr1;
+            typeOfAttack = 12;
+            stage = 5;
+            StageFive();
         }
     }
 }

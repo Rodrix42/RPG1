@@ -71,6 +71,13 @@
             this.progressBar15 = new System.Windows.Forms.ProgressBar();
             this.progressBar16 = new System.Windows.Forms.ProgressBar();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -81,6 +88,14 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -91,21 +106,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -540,6 +540,69 @@
             this.panel1.Size = new System.Drawing.Size(333, 576);
             this.panel1.TabIndex = 42;
             // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(121, 547);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(114, 13);
+            this.label43.TabIndex = 60;
+            this.label43.Text = "Стоимость: 50  маны";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(121, 406);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(114, 13);
+            this.label40.TabIndex = 57;
+            this.label40.Text = "Стоимость: 40  маны";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(121, 252);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(114, 13);
+            this.label38.TabIndex = 52;
+            this.label38.Text = "Стоимость: 60  маны";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(121, 82);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(114, 13);
+            this.label36.TabIndex = 46;
+            this.label36.Text = "Стоимость: 60  маны";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(121, 560);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(164, 13);
+            this.label31.TabIndex = 51;
+            this.label31.Text = "Увеличивает свой урон на 50%";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(121, 419);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(79, 13);
+            this.label30.TabIndex = 50;
+            this.label30.Text = "Даёт 60 маны";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(121, 265);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(139, 13);
+            this.label29.TabIndex = 46;
+            this.label29.Text = "Лечит Союзника на 50 ХП";
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -575,6 +638,7 @@
             this.button10.TabIndex = 47;
             this.button10.Text = "Скилл";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -666,6 +730,78 @@
             this.panel2.Size = new System.Drawing.Size(313, 576);
             this.panel2.TabIndex = 43;
             // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(79, 547);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(114, 13);
+            this.label42.TabIndex = 59;
+            this.label42.Text = "Стоимость: 50  маны";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(79, 401);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(114, 13);
+            this.label41.TabIndex = 58;
+            this.label41.Text = "Стоимость: 40  маны";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(79, 247);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(114, 13);
+            this.label39.TabIndex = 53;
+            this.label39.Text = "Стоимость: 60  маны";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(79, 82);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(114, 13);
+            this.label37.TabIndex = 52;
+            this.label37.Text = "Стоимость: 60  маны";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(37, 560);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(164, 13);
+            this.label35.TabIndex = 56;
+            this.label35.Text = "Увеличивает свой урон на 50%";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(114, 414);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(79, 13);
+            this.label34.TabIndex = 55;
+            this.label34.Text = "Даёт 60 маны";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(62, 260);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(139, 13);
+            this.label33.TabIndex = 54;
+            this.label33.Text = "Лечит Союзника на 50 ХП";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(37, 95);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(162, 13);
+            this.label32.TabIndex = 52;
+            this.label32.Text = "Уменьшает урон врага на 10%";
+            // 
             // button16
             // 
             this.button16.Location = new System.Drawing.Point(229, 550);
@@ -701,6 +837,7 @@
             this.button13.TabIndex = 50;
             this.button13.Text = "Скилл";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // label27
             // 
@@ -756,141 +893,6 @@
             this.label19.Size = new System.Drawing.Size(41, 13);
             this.label19.TabIndex = 45;
             this.label19.Text = "label19";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(121, 265);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(139, 13);
-            this.label29.TabIndex = 46;
-            this.label29.Text = "Лечит Союзника на 50 ХП";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(121, 419);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(79, 13);
-            this.label30.TabIndex = 50;
-            this.label30.Text = "Даёт 60 маны";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(121, 560);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(164, 13);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "Увеличивает свой урон на 50%";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(37, 95);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(162, 13);
-            this.label32.TabIndex = 52;
-            this.label32.Text = "Уменьшает урон врага на 10%";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(62, 260);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(139, 13);
-            this.label33.TabIndex = 54;
-            this.label33.Text = "Лечит Союзника на 50 ХП";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(114, 414);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(79, 13);
-            this.label34.TabIndex = 55;
-            this.label34.Text = "Даёт 60 маны";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(37, 560);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(164, 13);
-            this.label35.TabIndex = 56;
-            this.label35.Text = "Увеличивает свой урон на 50%";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(121, 82);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(114, 13);
-            this.label36.TabIndex = 46;
-            this.label36.Text = "Стоимость: 60  маны";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(79, 82);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(114, 13);
-            this.label37.TabIndex = 52;
-            this.label37.Text = "Стоимость: 60  маны";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(121, 252);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(114, 13);
-            this.label38.TabIndex = 52;
-            this.label38.Text = "Стоимость: 60  маны";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(79, 247);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(114, 13);
-            this.label39.TabIndex = 53;
-            this.label39.Text = "Стоимость: 60  маны";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(121, 406);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(114, 13);
-            this.label40.TabIndex = 57;
-            this.label40.Text = "Стоимость: 40  маны";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(79, 401);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(114, 13);
-            this.label41.TabIndex = 58;
-            this.label41.Text = "Стоимость: 40  маны";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(79, 547);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(114, 13);
-            this.label42.TabIndex = 59;
-            this.label42.Text = "Стоимость: 50  маны";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(121, 547);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(114, 13);
-            this.label43.TabIndex = 60;
-            this.label43.Text = "Стоимость: 50  маны";
             // 
             // Form1
             // 
