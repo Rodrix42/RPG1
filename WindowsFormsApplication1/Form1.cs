@@ -58,7 +58,7 @@ namespace WindowsFormsApplication1
             label9.Text = r1.Mp.ToString();
             progressBar16.Value = r1.Mp;
             label7.Text = p2.Mp.ToString();
-            progressBar9.Value = p2.Hp;
+            progressBar9.Value = p2.Mp;
             label5.Text = pr2.Mp.ToString();
             progressBar10.Value = pr2.Mp;
             label3.Text = sh2.Mp.ToString();

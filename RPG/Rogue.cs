@@ -9,6 +9,7 @@ namespace ConsoleApplication1
     {
         public Rogue(int hp, int mp, int dmg)
         {
+            
             this.Hp = hp;
             this.Mp = mp;
             this.Dmg = dmg;
