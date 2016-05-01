@@ -49,12 +49,40 @@ namespace WindowsFormsApplication1
             progressBar3.Value = sh2.Hp;
             label2.Text = r2.Hp.ToString();
             progressBar4.Value = r2.Hp;
+            label15.Text = p1.Mp.ToString();
+            progressBar13.Value = p1.Mp;
+            label13.Text = pr1.Mp.ToString();
+            progressBar14.Value = pr1.Mp;
+            label11.Text = sh1.Mp.ToString();
+            progressBar15.Value = sh1.Mp;
+            label9.Text = r1.Mp.ToString();
+            progressBar16.Value = r1.Mp;
+            label7.Text = p2.Mp.ToString();
+            progressBar9.Value = p2.Hp;
+            label5.Text = pr2.Mp.ToString();
+            progressBar10.Value = pr2.Mp;
+            label3.Text = sh2.Mp.ToString();
+            progressBar11.Value = sh2.Mp;
+            label1.Text = r2.Mp.ToString();
+            progressBar12.Value = r2.Mp;
+            label20.Text = p1.Dmg.ToString();
+            label21.Text = pr1.Dmg.ToString();
+            label22.Text = sh1.Dmg.ToString();
+            label23.Text = r1.Dmg.ToString();
+            label24.Text = p2.Dmg.ToString();
+            label25.Text = pr2.Dmg.ToString();
+            label26.Text = sh2.Dmg.ToString();
+            label27.Text = r2.Dmg.ToString();
             if (p2.Hp == 0)
             {
                 progressBar1.Visible = false;
                 progressBar9.Visible = false;
                 label8.Visible = false;
                 label7.Visible = false;
+                label20.Visible = false;
+                label28.Visible = false;
+                button9.Visible = false;
+                button9.Enabled = false;
                 button1.Visible = false;
                 button1.Enabled = false;
             }
@@ -233,7 +261,7 @@ namespace WindowsFormsApplication1
                 agressor = p1;
                 winlose();
                 stage = 3;
-                
+                typeOfAttack = 0;
                 StageThree();
             }
             else if (stage == 5)
@@ -273,39 +301,36 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = pr1;
+                
                 winlose();
                 stage = 3;
-                
+                typeOfAttack = 0;
                 StageThree();
             }
             else if (stage == 5)
             {
-                
+                agressor.target = pr1;
                 if (typeOfAttack == 0)
                 {
-                    agressor.target = pr1;
+                    update();
                     agressor.attack();
                     stage = 2;
                     StageTwo();
                 }
                 if (typeOfAttack == 11)
                 {
-                    agressor.target = pr1;
+                    update();
                     agressor.Skill1();
                     stage = 2;
                     StageTwo();
                 }
                 if (typeOfAttack == 12)
                 {
+                    update();
                     agressor.Skill1();
                     stage = 4;
                     StageFour();
                 }
-                agressor.attack();
-                update();
-                winlose();
-                stage = 2;
-                StageTwo();
             }
         }
 
@@ -316,16 +341,36 @@ namespace WindowsFormsApplication1
                 agressor = sh1;
                 winlose();
                 stage = 3;
+                typeOfAttack = 0;
                 StageThree();
             }
             else if (stage == 5)
             {
                 agressor.target = sh1;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 2;
-                StageTwo();
+                if (typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
             }
         }
 
@@ -336,16 +381,36 @@ namespace WindowsFormsApplication1
                 agressor = r1;
                 winlose();
                 stage = 3;
+                typeOfAttack = 0;
                 StageThree();
             }
             else if (stage == 5)
             {
                 agressor.target = r1;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 2;
-                StageTwo();
+                if (typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
             }
         }
 
@@ -395,17 +460,37 @@ namespace WindowsFormsApplication1
             if (stage == 3)
             {
                 agressor.target = pr2;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 4;
-                StageFour();
+                if (typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
             }
             else if (stage == 4)
             {
                 agressor = pr2;
                 winlose();
                 stage = 5;
+                typeOfAttack = 0;
                 StageFive();
             }
         }
@@ -415,16 +500,36 @@ namespace WindowsFormsApplication1
             if (stage == 3)
             {
                 agressor.target =sh2;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 4;
-                StageFour();
+                if (typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
             }
             else if (stage == 4)
             {
                 agressor = sh2;
                 stage = 5;
+                typeOfAttack = 0;
                 StageFive();
             }
         }
@@ -434,17 +539,37 @@ namespace WindowsFormsApplication1
             if (stage == 3)
             {
                 agressor.target = r2;
-                agressor.attack();
-                update();
-                winlose();
-                stage = 4;
-                StageFour();
+                if (typeOfAttack == 0)
+                {
+                    agressor.attack();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 11)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 4;
+                    StageFour();
+                }
+                if (typeOfAttack == 12)
+                {
+                    agressor.Skill1();
+                    update();
+                    winlose();
+                    stage = 2;
+                    StageTwo();
+                }
             }
             else if (stage == 4)
             {
                 agressor = r2;
                 winlose();
                 stage = 5;
+                typeOfAttack = 0;
                 StageFive();
             }
         }
@@ -471,6 +596,46 @@ namespace WindowsFormsApplication1
             typeOfAttack = 12;
             stage = 5;
             StageFive();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            agressor = pr2;
+            typeOfAttack = 12;
+            stage = 3;
+            StageThree();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            agressor = sh1;
+            typeOfAttack = 12;
+            stage = 5;
+            StageFive();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            agressor = r1;
+            typeOfAttack = 12;
+            stage = 5;
+            StageFive();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            agressor = sh2;
+            typeOfAttack = 12;
+            stage = 3;
+            StageThree();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            agressor = r2;
+            typeOfAttack = 12;
+            stage = 3;
+            StageThree();
         }
     }
 }

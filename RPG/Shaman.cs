@@ -21,7 +21,7 @@ namespace ConsoleApplication1
             }
             else
             {
-                target.Hp = (int)(target.Mp + 60);
+                target.Mp = (int)(target.Mp + 60);
                 this.Mp = this.Mp - 40;
             }
         }

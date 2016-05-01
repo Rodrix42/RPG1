@@ -426,7 +426,7 @@
             // 
             // progressBar9
             // 
-            this.progressBar9.BackColor = System.Drawing.Color.Blue;
+            this.progressBar9.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar9.ForeColor = System.Drawing.Color.Blue;
             this.progressBar9.Location = new System.Drawing.Point(33, 51);
             this.progressBar9.Name = "progressBar9";
@@ -435,7 +435,7 @@
             // 
             // progressBar10
             // 
-            this.progressBar10.BackColor = System.Drawing.Color.Blue;
+            this.progressBar10.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar10.ForeColor = System.Drawing.Color.Blue;
             this.progressBar10.Location = new System.Drawing.Point(33, 213);
             this.progressBar10.Name = "progressBar10";
@@ -444,7 +444,7 @@
             // 
             // progressBar11
             // 
-            this.progressBar11.BackColor = System.Drawing.Color.Blue;
+            this.progressBar11.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar11.ForeColor = System.Drawing.Color.Blue;
             this.progressBar11.Location = new System.Drawing.Point(33, 367);
             this.progressBar11.Name = "progressBar11";
@@ -453,7 +453,7 @@
             // 
             // progressBar12
             // 
-            this.progressBar12.BackColor = System.Drawing.Color.Blue;
+            this.progressBar12.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar12.ForeColor = System.Drawing.Color.Blue;
             this.progressBar12.Location = new System.Drawing.Point(33, 519);
             this.progressBar12.Name = "progressBar12";
@@ -462,7 +462,7 @@
             // 
             // progressBar13
             // 
-            this.progressBar13.BackColor = System.Drawing.Color.Blue;
+            this.progressBar13.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar13.ForeColor = System.Drawing.Color.Blue;
             this.progressBar13.Location = new System.Drawing.Point(177, 54);
             this.progressBar13.Name = "progressBar13";
@@ -471,7 +471,7 @@
             // 
             // progressBar14
             // 
-            this.progressBar14.BackColor = System.Drawing.Color.Blue;
+            this.progressBar14.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar14.ForeColor = System.Drawing.Color.Blue;
             this.progressBar14.Location = new System.Drawing.Point(177, 213);
             this.progressBar14.Name = "progressBar14";
@@ -480,7 +480,7 @@
             // 
             // progressBar15
             // 
-            this.progressBar15.BackColor = System.Drawing.Color.Blue;
+            this.progressBar15.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar15.ForeColor = System.Drawing.Color.Blue;
             this.progressBar15.Location = new System.Drawing.Point(177, 373);
             this.progressBar15.Name = "progressBar15";
@@ -489,7 +489,7 @@
             // 
             // progressBar16
             // 
-            this.progressBar16.BackColor = System.Drawing.Color.Blue;
+            this.progressBar16.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.progressBar16.ForeColor = System.Drawing.Color.Blue;
             this.progressBar16.Location = new System.Drawing.Point(177, 519);
             this.progressBar16.Name = "progressBar16";
@@ -620,6 +620,7 @@
             this.button12.TabIndex = 49;
             this.button12.Text = "Скилл";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -629,6 +630,7 @@
             this.button11.TabIndex = 48;
             this.button11.Text = "Скилл";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -810,6 +812,7 @@
             this.button16.TabIndex = 53;
             this.button16.Text = "Скилл";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -819,6 +822,7 @@
             this.button15.TabIndex = 52;
             this.button15.Text = "Скилл";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -828,6 +832,7 @@
             this.button14.TabIndex = 51;
             this.button14.Text = "Скилл";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
