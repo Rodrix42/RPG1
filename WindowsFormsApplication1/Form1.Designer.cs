@@ -106,6 +106,14 @@
             this.label24 = new System.Windows.Forms.Label();
             this.button17 = new System.Windows.Forms.Button();
             this.label19 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -498,6 +506,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button21);
+            this.panel1.Controls.Add(this.button20);
+            this.panel1.Controls.Add(this.button19);
+            this.panel1.Controls.Add(this.button18);
             this.panel1.Controls.Add(this.label43);
             this.panel1.Controls.Add(this.label40);
             this.panel1.Controls.Add(this.label38);
@@ -537,7 +549,7 @@
             this.panel1.Controls.Add(this.label9);
             this.panel1.Location = new System.Drawing.Point(12, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(333, 576);
+            this.panel1.Size = new System.Drawing.Size(333, 685);
             this.panel1.TabIndex = 42;
             // 
             // label43
@@ -690,6 +702,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button25);
+            this.panel2.Controls.Add(this.button24);
+            this.panel2.Controls.Add(this.button23);
+            this.panel2.Controls.Add(this.button22);
             this.panel2.Controls.Add(this.label42);
             this.panel2.Controls.Add(this.label41);
             this.panel2.Controls.Add(this.label39);
@@ -729,7 +745,7 @@
             this.panel2.Controls.Add(this.progressBar2);
             this.panel2.Location = new System.Drawing.Point(534, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(313, 576);
+            this.panel2.Size = new System.Drawing.Size(313, 685);
             this.panel2.TabIndex = 43;
             // 
             // label42
@@ -899,11 +915,84 @@
             this.label19.TabIndex = 45;
             this.label19.Text = "label19";
             // 
+            // button18
+            // 
+            this.button18.Location = new System.Drawing.Point(13, 134);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(75, 23);
+            this.button18.TabIndex = 61;
+            this.button18.Text = "Скилл";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
+            // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(13, 301);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.TabIndex = 62;
+            this.button19.Text = "Скилл";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(13, 453);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(75, 23);
+            this.button20.TabIndex = 63;
+            this.button20.Text = "Скилл";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(13, 600);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(75, 23);
+            this.button21.TabIndex = 64;
+            this.button21.Text = "Скилл";
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Location = new System.Drawing.Point(229, 134);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(75, 23);
+            this.button22.TabIndex = 65;
+            this.button22.Text = "Скилл";
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Location = new System.Drawing.Point(229, 301);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(75, 23);
+            this.button23.TabIndex = 66;
+            this.button23.Text = "Скилл";
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Location = new System.Drawing.Point(229, 453);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(75, 23);
+            this.button24.TabIndex = 67;
+            this.button24.Text = "Скилл";
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Location = new System.Drawing.Point(229, 600);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(75, 23);
+            this.button25.TabIndex = 68;
+            this.button25.Text = "Скилл";
+            this.button25.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 585);
+            this.ClientSize = new System.Drawing.Size(850, 704);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.panel1);
@@ -1000,6 +1089,14 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button23;
+        private System.Windows.Forms.Button button22;
     }
 }
 

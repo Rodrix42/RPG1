@@ -25,5 +25,16 @@ namespace ConsoleApplication1
                 this.Mp = this.Mp - 60;
             }
         }
+        public override void Skill2(List<Character> Targets)
+        {
+            if (this.Mp < 50)
+            {
+
+            }
+            else
+            {
+ 
+            }
+        }
     }
 }

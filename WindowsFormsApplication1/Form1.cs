@@ -164,12 +164,20 @@ namespace WindowsFormsApplication1
         {
             panel2.Visible = false;
             panel1.Visible = true;
+            button9.Visible = true;
+            button10.Visible = true;
+            button11.Visible = true;
+            button12.Visible = true;
             label19.Text = "Выберите атакующего.";
         }
         void StageThree()
         {
             panel1.Visible = false;
             panel2.Visible = true;
+            button13.Visible = false;
+            button14.Visible = false;
+            button15.Visible = false;
+            button16.Visible = false;
             label19.Text = "Выберите цель.";
         }
         void StageFour()
@@ -177,6 +185,10 @@ namespace WindowsFormsApplication1
            
             panel1.Visible = false;
             panel2.Visible = true;
+            button13.Visible = true;
+            button14.Visible = true;
+            button15.Visible = true;
+            button16.Visible = true;
             label19.Text = "Выбери атакующего";
 
         }
@@ -184,6 +196,10 @@ namespace WindowsFormsApplication1
         {
             panel2.Visible = false;
             panel1.Visible = true;
+            button9.Visible = false;
+            button10.Visible = false;
+            button11.Visible = false;
+            button12.Visible = false;
             label19.Text = "Выберите цель.";
         }
         int typeOfAttack = 0;
@@ -301,7 +317,6 @@ namespace WindowsFormsApplication1
             if (stage == 2)
             {
                 agressor = pr1;
-                
                 winlose();
                 stage = 3;
                 typeOfAttack = 0;
@@ -312,22 +327,22 @@ namespace WindowsFormsApplication1
                 agressor.target = pr1;
                 if (typeOfAttack == 0)
                 {
-                    update();
                     agressor.attack();
+                    update();
                     stage = 2;
                     StageTwo();
                 }
                 if (typeOfAttack == 11)
                 {
-                    update();
                     agressor.Skill1();
+                    update(); 
                     stage = 2;
                     StageTwo();
                 }
                 if (typeOfAttack == 12)
                 {
-                    update();
                     agressor.Skill1();
+                    update();
                     stage = 4;
                     StageFour();
                 }
@@ -636,6 +651,11 @@ namespace WindowsFormsApplication1
             typeOfAttack = 12;
             stage = 3;
             StageThree();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

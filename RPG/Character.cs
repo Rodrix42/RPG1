@@ -59,5 +59,9 @@ namespace ConsoleApplication1
         {
  
         }
+        public virtual void Skill2(List<Character> Targets)
+        {
+
+        }
     }
 }
